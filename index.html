@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 - 小明 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">XM<span>.</span>dev</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#timeline" class="nav-link">经历</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="avatar-wrap">
+                <div class="avatar">🧑‍💻</div>
+                <div class="status-dot"></div>
+            </div>
+            <p class="greeting">Hi there 👋 我是</p>
+            <h1>小明 <span class="highlight">Xiao Ming</span></h1>
+            <p class="subtitle">前端开发爱好者 · UI/UX 设计探索者</p>
+            <p class="motto">「用代码把想法变成看得见的东西。」</p>
+            <div class="hero-tags">
+                <span class="hero-tag">🔥 热爱编程</span>
+                <span class="hero-tag">🎨 追求美感</span>
+                <span class="hero-tag">🚀 持续学习</span>
+            </div>
+            <div class="hero-btns">
+                <a href="#about" class="btn btn-primary">了解更多</a>
+            </div>
+        </div>
+        <div class="scroll-hint">↓ 向下滚动</div>
+    </section>
+
+    <main class="container">
+        <!-- 关于我 -->
+        <section class="card fade-in" id="about">
+            <div class="section-head">
+                <span class="section-num">01</span>
+                <h2>关于我</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>大家好，我是<strong>小明</strong>，一个对代码和色彩都充满热情的普通大学生。</p>
+                    <p>从大一开始接触编程，就被深深吸引。后来渐渐对前端开发和人机交互产生了浓厚的兴趣，喜欢研究各种网站的色彩搭配、版式布局以及细腻的交互细节。</p>
+                </div>
+                <ul class="info-list">
+                    <li><span>姓名</span><b>小明</b></li>
+                    <li><span>学号</span><b>1-13</b></li>
+                    <li><span>专业</span><b>计算机科学与技术</b></li>
+                    <li><span>年级</span><b>2024 级</b></li>
+                    <li><span>学校</span><b>南京审计大学</b></li>
+                    <li><span>爱好</span><b>编程 / 摄影 / 旅行</b></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 技能 -->
+        <section class="card fade-in" id="skills">
+            <div class="section-head">
+                <span class="section-num">02</span>
+                <h2>我的技能</h2>
+            </div>
+            <p class="card-desc">目前还在不断学习中，下面是一些掌握得比较熟练的技术栈。</p>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">🌐</div>
+                    <h4>HTML5</h4>
+                    <div class="bar"><i style="width:90%"></i></div>
+                    <small>语义化标签 · 结构清晰</small>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🎨</div>
+                    <h4>CSS3</h4>
+                    <div class="bar"><i style="width:85%"></i></div>
+                    <small>Flex/Grid · 动画 · 响应式</small>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⚡</div>
+                    <h4>JavaScript</h4>
+                    <div class="bar"><i style="width:70%"></i></div>
+                    <small>DOM 操作 · 交互逻辑</small>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🐍</div>
+                    <h4>Python</h4>
+                    <div class="bar"><i style="width:75%"></i></div>
+                    <small>爬虫 · 数据分析</small>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🛠️</div>
+                    <h4>Git</h4>
+                    <div class="bar"><i style="width:65%"></i></div>
+                    <small>版本控制 · 团队协作</small>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">📱</div>
+                    <h4>UI 设计</h4>
+                    <div class="bar"><i style="width:60%"></i></div>
+                    <small>Figma · 配色 · 排版</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目 -->
+        <section class="card fade-in" id="projects">
+            <div class="section-head">
+                <span class="section-num">03</span>
+                <h2>我的项目</h2>
+            </div>
+            <p class="card-desc">课程实验与个人小作品。</p>
+            <div class="projects">
+                <article class="project">
+                    <div class="project-cover p1">📝</div>
+                    <div class="project-body">
+                        <h4>个人简介网站</h4>
+                        <p>本次实验3的成品，使用纯 HTML + CSS 实现双页面个人主页，含留言板与交互动效。</p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project-cover p2">🎮</div>
+                    <div class="project-body">
+                        <h4>网页版贪吃蛇</h4>
+                        <p>用原生 JavaScript 实现的经典小游戏，包含计分、难度递增和本地最高分记录。</p>
+                        <div class="tags">
+                            <span>JavaScript</span><span>Canvas</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project-cover p3">🌤️</div>
+                    <div class="project-body">
+                        <h4>天气查询小工具</h4>
+                        <p>调用第三方开放 API，支持城市搜索与未来七天预报，界面简洁直观。</p>
+                        <div class="tags">
+                            <span>API</span><span>Ajax</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 经历 -->
+        <section class="card fade-in" id="timeline">
+            <div class="section-head">
+                <span class="section-num">04</span>
+                <h2>学习经历</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-content">
+                        <span class="tl-time">2024.09</span>
+                        <h4>进入南京审计大学</h4>
+                        <p>开启计算机科学与技术专业的学习旅程。</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-content">
+                        <span class="tl-time">2025.03</span>
+                        <h4>初次接触前端</h4>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-content">
+                        <span class="tl-time">2025.09</span>
+                        <h4>加入学校技术社团</h4>
+                        <p>参与前端组，与伙伴们一起做项目、办技术分享会。</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-content">
+                        <span class="tl-time">2026.09</span>
+                        <h4>完成个人主页</h4>
+                        <p>独立完成本网站，作为《Web 页面交互设计》课程的实验作业。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系 -->
+        <section class="card fade-in" id="contact">
+            <div class="section-head">
+                <span class="section-num">05</span>
+                <h2>联系方式</h2>
+            </div>
+            <div class="contact-grid">
+                <a class="contact-item" href="mailto:xiao123@example.com">📧<span>xiao123@example.com</span></a>
+                <a class="contact-item" href="#">🐱<span>github.com/xiaoming</span></a>
+                <a class="contact-item" href="#">📷<span>@xiaoming_dev</span></a>
+                <div class="contact-item">📍<span>江苏省南京市</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 小明 · 个人简介网站 </p>
+    </footer>
+
+    <script>
+        // 导航高亮
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(l => l.addEventListener('click', () => {
+            links.forEach(x => x.classList.remove('active'));
+            l.classList.add('active');
+        }));
+        // 移动端菜单
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('show');
+        });
+        // 滚动出现动画
+        const io = new IntersectionObserver(es => {
+            es.forEach(e => e.isIntersecting && e.target.classList.add('show'));
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
